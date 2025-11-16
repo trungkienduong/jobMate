@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập / Đăng ký - JobConnect</title>
+    <link rel="stylesheet" href="register.css" />
+    <script
+      src="https://kit.fontawesome.com/a2e0ad3d3f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="auth-container">
+      <!-- Bước 1: Chọn loại tài khoản -->
+      <div class="select-role active" id="select-role">
+        <h2>Chào mừng đến với <span>JobConnect</span></h2>
+        <p>Chọn loại tài khoản của bạn để bắt đầu</p>
+        <div class="role-box">
+          <div class="role-card" onclick="showForm('employer')">
+            <i class="fa-solid fa-building"></i>
+            <h3>Nhà tuyển dụng</h3>
+            <p>Đăng tuyển và tìm kiếm ứng viên phù hợp</p>
+          </div>
+          <div class="role-card" onclick="showForm('seeker')">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>Người tìm việc</h3>
+            <p>Tạo hồ sơ và ứng tuyển công việc mơ ước</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bước 2: Form đăng nhập / đăng ký -->
+      <div class="form-container" id="form-container">
+        <div class="form-box">
+          <div class="form-header">
+            <h2 id="form-title">Đăng nhập</h2>
+            <p id="form-role">Dành cho Nhà tuyển dụng</p>
+          </div>
+
+          <form>
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Mật khẩu" required />
+            <button type="submit" class="btn">Đăng nhập</button>
+          </form>
+
+          <p class="toggle-text">
+            Chưa có tài khoản?
+            <a href="#" id="to-register">Đăng ký</a>
+          </p>
+
+          <p class="toggle-text hidden">
+            Đã có tài khoản?
+            <a href="#" id="to-login">Đăng nhập</a>
+          </p>
+
+          <button class="back-btn" onclick="goBack()">← Quay lại</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let role = "";
+      function showForm(selectedRole) {
+        role = selectedRole;
+        document.getElementById("select-role").classList.remove("active");
+        document.getElementById("form-container").classList.add("active");
+        document.getElementById("form-role").innerText =
+          selectedRole === "employer"
+            ? "Dành cho Nhà tuyển dụng"
+            : "Dành cho Người tìm việc";
+      }
+
+      function goBack() {
+        document.getElementById("form-container").classList.remove("active");
+        document.getElementById("select-role").classList.add("active");
+      }
+
+      // Toggle đăng nhập / đăng ký
+      document.getElementById("to-register").onclick = () => {
+        document.getElementById("form-title").innerText = "Đăng ký";
+        document
+          .querySelector("#to-register")
+          .parentElement.classList.add("hidden");
+        document
+          .querySelector("#to-login")
+          .parentElement.classList.remove("hidden");
+      };
+
+      document.getElementById("to-login").onclick = () => {
+        document.getElementById("form-title").innerText = "Đăng nhập";
+        document
+          .querySelector("#to-register")
+          .parentElement.classList.remove("hidden");
+        document
+          .querySelector("#to-login")
+          .parentElement.classList.add("hidden");
+      };
+    </script>
+  </body>
+</html>

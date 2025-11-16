@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerHub — Kết nối sự nghiệp thành công</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../HOME2/index.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- HEADER -->
+      <header>
+        <div class="brand">
+          <div class="logo-mark"><i class="fas fa-briefcase"></i></div>
+          <div>
+            <h1>JobMate</h1>
+            <p>Connect • Apply • Grow</p>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary Navigation">
+          <a href="#" class="active">Trang chủ</a>
+          <a href="../HOME2/job.html">Việc làm</a>
+          <a href="../HOME2/company.html">Công ty</a>
+          <a href="../HOME2/blog.html">Blog</a>
+          <a href="../HOME2/jobmade.html">Về chúng tôi</a>
+        </nav>
+
+        <div class="actions">
+          <a href="../HOME2/login.html" class="btn ghost">Đăng nhập</a>
+          <a href="../HOME2/register.html" class="btn primary">Đăng ký</a>
+        </div>
+      </header>
+
+      
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".testimonial-slider", {
+          loop: true,
+          autoplay: { delay: 4000, disableOnInteraction: false },
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: { el: ".swiper-pagination", clickable: true },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

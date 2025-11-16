@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JobMate — Kết nối sự nghiệp thành công</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../HOME2/index.css" />
+  </head>
+  <body>
+    
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>JobMate</h3>
+            <p>
+              Kết nối nhà tuyển dụng và ứng viên — tìm việc nhanh, ứng tuyển dễ,
+              phát triển sự nghiệp bền vững.
+            </p>
+
+            <div style="display: flex; gap: 10px; margin-top: 12px">
+              <a
+                href="#"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  font-size: 18px;
+                  padding: 8px;
+                  background: rgba(255, 255, 255, 0.06);
+                  border-radius: 8px;
+                "
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  font-size: 18px;
+                  padding: 8px;
+                  background: rgba(255, 255, 255, 0.06);
+                  border-radius: 8px;
+                "
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                style="
+                  color: white;
+                  text-decoration: none;
+                  font-size: 18px;
+                  padding: 8px;
+                  background: rgba(255, 255, 255, 0.06);
+                  border-radius: 8px;
+                "
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="links">
+            <h4 style="margin: 0 0 8px 0">Dành cho ứng viên</h4>
+            <ul>
+              <li><a href="#">Tìm việc làm</a></li>
+              <li><a href="#">Tạo CV online</a></li>
+              <li><a href="#">Gói dịch vụ</a></li>
+              <li><a href="#">Blog nghề nghiệp</a></li>
+            </ul>
+          </div>
+
+          <div class="links">
+            <h4 style="margin: 0 0 8px 0">Dành cho nhà tuyển dụng</h4>
+            <ul>
+              <li><a href="#">Đăng tin tuyển dụng</a></li>
+              <li><a href="#">Tìm ứng viên</a></li>
+              <li><a href="#">Gói dịch vụ</a></li>
+              <li><a href="#">Quảng cáo</a></li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <h4 style="margin: 0 0 8px 0">Nhận thông báo</h4>
+            <p style="margin: 0; color: rgba(255, 255, 255, 0.85)">
+              Đăng ký để nhận việc làm mới phù hợp
+            </p>
+            <input type="email" placeholder="Email của bạn" />
+            <button>Đăng ký</button>
+            <p
+              style="
+                margin-top: 12px;
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 13px;
+              "
+            >
+              Hoặc liên hệ: <strong>contact@careerhub.vn</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © <strong>CareerHub</strong> — All rights reserved.
+            <span style="margin-left: 10px; color: rgba(255, 255, 255, 0.75)"
+              >Designed 2025</span
+            >
+          </div>
+          <div style="color: rgba(255, 255, 255, 0.85)">
+            Điều khoản • Chính sách bảo mật • Trợ giúp
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".testimonial-slider", {
+          loop: true,
+          autoplay: { delay: 4000, disableOnInteraction: false },
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: { el: ".swiper-pagination", clickable: true },
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

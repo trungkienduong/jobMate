@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CareerHub - Nền tảng kết nối việc làm hàng đầu Việt Nam. Tìm kiếm công việc mơ ước với hàng ngàn cơ hội từ các công ty uy tín."
+    />
+    <meta
+      name="keywords"
+      content="tuyển dụng, việc làm, công ty, CV, nghề nghiệp, Việt Nam"
+    />
+    <meta name="author" content="CareerHub Team" />
+    <title>CareerHub - Kết nối sự nghiệp thành công</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <style>
+      :root {
+        --primary: #2563eb;
+        --primary-dark: #1d4ed8;
+        --secondary: #64748b;
+        --accent: #10b981;
+        --light: #f8fafc;
+        --dark: #1e293b;
+        --danger: #ef4444;
+        --success: #22c55e;
+        --warning: #f59e0b;
+        --border: #e2e8f0;
+        --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <i class="fas fa-briefcase"></i>
+          <span>CareerHub</span>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="#" class="active">Trang chủ</a></li>
+          <li><a href="#">Việc làm</a></li>
+          <li><a href="#">Công ty</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="btn btn-secondary">Đăng nhập</button>
+          <button class="btn btn-primary">Đăng ký</button>
+
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Tìm công việc mơ ước của bạn một cách dễ dàng</h1>
+          <p>
+            Kết nối với hàng ngàn nhà tuyển dụng uy tín và tìm kiếm cơ hội việc
+            làm phù hợp với kỹ năng của bạn
+          </p>
+
+          <div class="hero-search">
+            <div class="search-tabs">
+              <div class="search-tab active">Tìm việc làm</div>
+              <div class="search-tab">Tìm công ty</div>
+            </div>
+
+            <form class="search-form">
+              <div class="form-group">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Vị trí, kỹ năng, từ khóa..." />
+              </div>
+
+              <div class="form-group">
+                <i class="fas fa-map-marker-alt"></i>
+                <select>
+                  <option value="">Tất cả địa điểm</option>
+                  <option value="hanoi">Hà Nội</option>
+                  <option value="hcm">TP. Hồ Chí Minh</option>
+                  <option value="danang">Đà Nẵng</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <i class="fas fa-briefcase"></i>
+                <select>
+                  <option value="">Tất cả ngành nghề</option>
+                  <option value="it">Công nghệ thông tin</option>
+                  <option value="finance">Tài chính - Ngân hàng</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="design">Thiết kế</option>
+                </select>
+              </div>
+
+              <button type="submit" class="search-btn">
+                <i class="fas fa-search"></i> Tìm kiếm
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="stat-number">10,000+</div>
+            <div class="stat-text">Việc làm mới</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <div class="stat-number">5,000+</div>
+            <div class="stat-text">Công ty</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <div class="stat-number">1,000,000+</div>
+            <div class="stat-text">Ứng viên</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="stat-number">95%</div>
+            <div class="stat-text">Tỷ lệ thành công</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Khám phá theo ngành nghề</h2>
+          <p class="section-subtitle">
+            Tìm kiếm công việc phù hợp với kỹ năng và đam mê của bạn
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="category-title">Công nghệ thông tin</h3>
+            <p class="category-jobs">2,356 việc làm</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="category-title">Kinh doanh</h3>
+            <p class="category-jobs">1,895 việc làm</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="category-title">Thiết kế</h3>
+            <p class="category-jobs">1,234 việc làm</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h3 class="category-title">Tài chính</h3>
+            <p class="category-jobs">1,567 việc làm</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="category-title">Giáo dục</h3>
+            <p class="category-jobs">987 việc làm</p>
+          </div>
+
+          <div class="category-card">
+            <div class="category-icon">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <h3 class="category-title">Y tế</h3>
+            <p class="category-jobs">1,432 việc làm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section class="featured-jobs">
+      <div class="container">
+        <div class="jobs-header">
+          <h2 class="section-title">Việc làm nổi bật</h2>
+          <a href="#" class="view-all">
+            Xem tất cả <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="jobs-grid">
+          <div class="job-card featured">
+            <span class="job-badge">Gợi ý</span>
+            <div class="job-header">
+              <img
+                src="https://logo.clearbit.com/google.com"
+                alt="Google company logo"
+                class="company-logo"
+              />
+              <div class="job-info">
+                <h3>Senior Frontend Developer</h3>
+                <p class="company">Google</p>
+              </div>
+            </div>
+
+            <div class="job-details">
+              <div class="job-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hà Nội</span>
+              </div>
+              <div class="job-detail">
+                <i class="fas fa-clock"></i>
+                <span>Toàn thời gian</span>
+              </div>
+              <div class="job-detail">
+                <i class="fas fa-calendar-alt"></i>
+                <span>2 ngày trước</span>
+              </div>
+            </div>
+
+            <div class="job-tags">
+              <span class="job-tag">React</span>
+              <span class="job-tag">TypeScript</span>
+              <span class="job-tag">UI/UX</span>
+            </div>
+
+            <div class="job-actions">
+              <div class="job-salary">$3,000 - $5,000</div>
+              <button class="apply-btn">Ứng tuyển</button>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <img
+                src="https://logo.clearbit.com/microsoft.com"
+                alt="Microsoft company logo"
+                class="company-logo"
+              />
+              <div class="job-info">
+                <h3>Product Manager</h3>
+                <p class="company">Microsoft</p>
+              </div>
+            </div>
+
+            <div class="job-details">
+              <div class="job-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>TP. Hồ Chí Minh</span>
+              </div>
+              <div class="job-detail">
+                <i class="fas fa-clock"></i>
+                <span>Toàn thời gian</span>
+              </div>
+              <div class="job-detail">
+                <i class="fas fa-calendar-alt"></i>
+                <span>5 ngày trước</span>
+              </div>
+            </div>
+
+            <div class="job-tags">
+              <span class="job-tag">Product Strategy</span>
+              <span class="job-tag">Agile</span>
+              <span class="job-tag">Analysis</span>
+            </div>
+
+            <div class="job-actions">
+              <div class="job-salary">$2,500 - $4,000</div>
+              <button class="apply-btn">Ứng tuyển</button>
+            </div>
+          </div>
+
+          <div class="job-card">
+            <div class="job-header">
+              <img
+                src="https://logo.clearbit.com/facebook.com"
+                alt="Facebook company logo"
+                class="company-logo"
+              />
+              <div class="job-info">
+                <h3>UX Designer</h3>
+                <p class="company">Meta</p>
+              </div>
+            </div>
+
+            <div class="job-details">
+              <div class="job-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Đà Nẵng</span>
+              </div>
+              <div class="job-detail">
+                <i class="fas fa-clock"></i>
+                <span>Bán thời gian</span>
+              </div>
+              <div class="job-detail">
+                <i class="fas fa-calendar-alt"></i>
+                <span>1 tuần trước</span>
+              </div>
+            </div>
+
+            <div class="job-tags">
+              <span class="job-tag">Figma</span>
+              <span class="job-tag">UI Design</span>
+              <span class="job-tag">Prototyping</span>
+            </div>
+
+            <div class="job-actions">
+              <div class="job-salary">$1,500 - $2,500</div>
+              <button class="apply-btn">Ứng tuyển</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Companies -->
+    <section class="featured-companies">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Công ty hàng đầu</h2>
+          <p class="section-subtitle">
+            Khám phá những công ty tuyển dụng tích cực với môi trường làm việc
+            tốt nhất
+          </p>
+        </div>
+
+        <div class="companies-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="company-slide swiper-slide">
+              <img
+                src="https://logo.clearbit.com/google.com"
+                alt="Google company logo"
+                class="company-logo-large"
+              />
+              <h3 class="company-name">Google</h3>
+              <p class="company-industry">Công nghệ & Internet</p>
+
+              <div class="company-stats">
+                <div class="company-stat">
+                  <div class="stat-value">256</div>
+                  <div class="stat-label">Việc làm</div>
+                </div>
+                <div class="company-stat">
+                  <div class="stat-value">4.8</div>
+                  <div class="stat-label">Đánh giá</div>
+                </div>
+              </div>
+
+              <button class="company-view-btn">Xem công ty</button>
+            </div>
+
+            <div class="company-slide swiper-slide">
+              <img
+                src="https://logo.clearbit.com/microsoft.com"
+                alt="Microsoft company logo"
+                class="company-logo-large"
+              />
+              <h3 class="company-name">Microsoft</h3>
+              <p class="company-industry">Phần mềm & Công nghệ</p>
+
+              <div class="company-stats">
+                <div class="company-stat">
+                  <div class="stat-value">189</div>
+                  <div class="stat-label">Việc làm</div>
+                </div>
+                <div class="company-stat">
+                  <div class="stat-value">4.7</div>
+                  <div class="stat-label">Đánh giá</div>
+                </div>
+              </div>
+
+              <button class="company-view-btn">Xem công ty</button>
+            </div>
+
+            <div class="company-slide swiper-slide">
+              <img
+                src="https://logo.clearbit.com/apple.com"
+                alt="Apple company logo"
+                class="company-logo-large"
+              />
+              <h3 class="company-name">Apple</h3>
+              <p class="company-industry">Công nghệ & Thiết bị</p>
+
+              <div class="company-stats">
+                <div class="company-stat">
+                  <div class="stat-value">142</div>
+                  <div class="stat-label">Việc làm</div>
+                </div>
+                <div class="company-stat">
+                  <div class="stat-value">4.9</div>
+                  <div class="stat-label">Đánh giá</div>
+                </div>
+              </div>
+
+              <button class="company-view-btn">Xem công ty</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Câu chuyện thành công</h2>
+          <p class="section-subtitle">
+            Những ứng viên đã tìm được công việc mơ ước thông qua CareerHub
+          </p>
+        </div>
+
+        <div class="testimonial-slider swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial-slide swiper-slide">
+              <div class="testimonial-content">
+                CareerHub đã giúp tôi tìm được công việc mơ ước chỉ sau 2 tuần.
+                Giao diện dễ sử dụng và có rất nhiều công việc phù hợp với kỹ
+                năng của tôi.
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt="Nguyen Van A"
+                  class="author-avatar"
+                />
+                <div class="author-info">
+                  <h4>Nguyễn Văn A</h4>
+                  <p>Senior Developer tại Google</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide swiper-slide">
+              <div class="testimonial-content">
+                Tôi đã ứng tuyển nhiều nơi nhưng không có kết quả. Nhờ
+                CareerHub, tôi đã tìm được công việc phù hợp với mức lương tốt
+                và môi trường làm việc chuyên nghiệp.
+              </div>
+              <div class="testimonial-author">
+                <img
+                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt="Tran Thi B"
+                  class="author-avatar"
+                />
+                <div class="author-info">
+                  <h4>Trần Thị B</h4>
+                  <p>Product Manager tại Microsoft</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Sẵn sàng cho sự nghiệp mới?</h2>
+          <p>
+            Tạo hồ sơ ngay để kết nối với nhà tuyển dụng hàng đầu và tìm kiếm cơ
+            hội việc làm phù hợp
+          </p>
+
+          <div class="cta-buttons">
+            <button class="btn btn-primary">
+              <i class="fas fa-file-alt"></i> Tạo hồ sơ
+            </button>
+            <button
+              class="btn btn-outline"
+              style="
+                background-color: rgba(255, 255, 255, 0.2);
+                color: white;
+                border-color: white;
+              "
+            >
+              <i class="fas fa-building"></i> Đăng tuyển dụng
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="logo" style="color: white; margin-bottom: 1.5rem">
+              <i class="fas fa-briefcase"></i>
+              <span>CareerHub</span>
+            </div>
+            <p>
+              Kết nối nhà tuyển dụng và ứng viên một cách hiệu quả nhất. Tìm
+              kiếm công việc mơ ước và xây dựng sự nghiệp thành công.
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Dành cho ứng viên</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-angle-right"></i> Tìm việc làm</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-right"></i> Tạo CV online</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-right"></i> Gói dịch vụ</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-angle-right"></i> Blog nghề nghiệp</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Dành cho nhà tuyển dụng</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#"
+                  ><i class="fas fa-angle-right"></i> Đăng tin tuyển dụng</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-right"></i> Tìm ứng viên</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-right"></i> Gói dịch vụ</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-angle-right"></i> Quảng cáo</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Liên hệ</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ, TP.
+              Hồ Chí Minh
+            </p>
+            <p><i class="fas fa-phone"></i> (0123) 456 789</p>
+            <p><i class="fas fa-envelope"></i> contact@careerhub.vn</p>
+
+            <div class="footer-newsletter">
+              <p>Đăng ký nhận thông báo việc làm mới</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Email của bạn" />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2023 CareerHub. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Swiper sliders
+        const companiesSwiper = new Swiper(".companies-slider", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+            delay: 3000,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          },
+        });
+
+        const testimonialsSwiper = new Swiper(".testimonial-slider", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        // Search tabs functionality
+        const searchTabs = document.querySelectorAll(".search-tab");
+        searchTabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            searchTabs.forEach((t) => t.classList.remove("active"));
+            tab.classList.add("active");
+          });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+          hamburger.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
